@@ -145,3 +145,27 @@ comment — текст на ревюто
 
 date — дата на публикуване
 
+
+**Инструкции как базата данни може да се инсталира и подкара**
+
+
+-Теглене:
+
+docker run -d \
+
+  --name my-mongo \
+  
+  -p 27017:27017 \
+  
+  -e MONGO_INITDB_ROOT_USERNAME=root \
+  
+  -e MONGO_INITDB_ROOT_PASSWORD=example \
+  
+  mongo
+
+
+-Стартиране: docker start my-mongo
+
+-Спиране: docker stop my-mongo
+
+  
